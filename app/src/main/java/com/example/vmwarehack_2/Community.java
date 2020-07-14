@@ -29,5 +29,21 @@ public class Community extends AppCompatActivity {
                 startActivity(new Intent(Community.this, Character.class));
             }
         });
+
+        Button chatroom1 = (Button) findViewById(R.id.randomparty_button);
+        chatroom1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Community.this, chatroom.class));
+            }
+        });
+
+        Button chatroom3 = (Button) findViewById(R.id.customparty_button_button);
+        chatroom2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Community.this, chatroom.class));
+            }
+        });
     }
 }
