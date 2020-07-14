@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Quests">
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="128dp"
+        android:layout_height="56dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="88dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
