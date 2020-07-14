@@ -1,10 +1,13 @@
 package com.example.vmwarehack_2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 public class Character extends AppCompatActivity {
@@ -28,5 +31,6 @@ public class Character extends AppCompatActivity {
                 startActivity(new Intent(Character.this, Community.class));
             }
         });
+
     }
 }
