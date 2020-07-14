@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">VMwareHack-2</string>
     <string name="quests">quests</string>
+    <string name="community">community</string>
 </resources>

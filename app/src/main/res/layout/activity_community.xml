@@ -7,7 +7,7 @@
     tools:context=".Community">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/home_button"
         android:layout_width="119dp"
         android:layout_height="109dp"
         android:layout_marginTop="621dp"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/character_button"
         android:layout_width="119dp"
         android:layout_height="109dp"
         android:layout_marginTop="621dp"
@@ -39,4 +39,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="465dp"
+        android:ems="10"
+        android:hint="@string/community"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/home_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
