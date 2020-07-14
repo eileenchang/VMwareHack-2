@@ -14,13 +14,6 @@ public class Character extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character);
 
-        Button char1 = (Button) findViewById(R.id.chartochar);
-        char1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Character.this, Character.class));
-            }
-        });
         Button char2 = (Button) findViewById(R.id.chartohome);
         char2.setOnClickListener(new View.OnClickListener() {
             @Override

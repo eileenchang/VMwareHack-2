@@ -21,5 +21,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Quests.class));
             }
         });
+        Button hom1 = (Button) findViewById(R.id.homtochar);
+        hom1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Character.class));
+            }
+        });
+        Button hom3 = (Button) findViewById(R.id.homtocomm);
+        hom3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Community.class));
+            }
+        });
     }
 }
