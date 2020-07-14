@@ -38,7 +38,7 @@ public class Community extends AppCompatActivity {
             }
         });
 
-        Button chatroom3 = (Button) findViewById(R.id.customparty_button_button);
+        Button chatroom2 = (Button) findViewById(R.id.customparty_button);
         chatroom2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
