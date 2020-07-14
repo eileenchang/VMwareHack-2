@@ -41,7 +41,7 @@ public class chatroom extends AppCompatActivity {
                     myText.append(finalMsg[finalMsg.length-1] + "\n");
                 }
 
- 
+
 
             }
 
