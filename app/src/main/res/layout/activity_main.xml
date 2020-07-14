@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <Button
@@ -11,6 +12,8 @@
         android:layout_width="119dp"
         android:layout_height="109dp"
         android:layout_marginTop="621dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/sprout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,9 +21,12 @@
 
     <Button
         android:id="@+id/homthom"
-        android:layout_width="0dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="621dp"
+        android:layout_width="172dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="571dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/housemaybe"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/homtocomm"
         app:layout_constraintStart_toEndOf="@+id/homtochar"
@@ -32,6 +38,8 @@
         android:layout_width="119dp"
         android:layout_height="109dp"
         android:layout_marginTop="621dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/commmembs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
