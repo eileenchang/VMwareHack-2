@@ -65,6 +65,8 @@
         android:id="@+id/back"
         android:layout_width="50dp"
         android:layout_height="88dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/to_the_left"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -73,6 +75,8 @@
         android:id="@+id/ford"
         android:layout_width="50dp"
         android:layout_height="88dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/to_the_right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
