@@ -33,8 +33,15 @@ public class chatroom extends AppCompatActivity {
         myDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String[] Messages = snapshot.getValue().toString().split(",");
+                myText.setText("");
 
-                myText.setText(snapshot.getValue().toString());
+                for (int i = 0; i < Messages.length; i++) {
+                    String[] finalMsg = Messages[i].split("=");
+                    myText.append(finalMsg[finalMsg.length-1] + "\n");
+                }
+
+ 
 
             }
 
@@ -48,7 +55,7 @@ public class chatroom extends AppCompatActivity {
 
     public void sendMessage(View view){
         EditText myEditText = findViewById(R.id.sendMessage);
-        myDatabase.setValue(myEditText.getText().toString());
+        myDatabase.child(Long.toString(System.currentTimeMillis())).setValue(myEditText.getText().toString());
         myEditText.setText("");
     }
 }
