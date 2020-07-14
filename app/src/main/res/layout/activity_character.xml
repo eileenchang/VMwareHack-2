@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".Character">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="217dp"
+        android:layout_height="66dp"
         android:layout_marginTop="100dp"
+        android:gravity="center"
         android:text="Character"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,10 +22,16 @@
     <Button
         android:id="@+id/chartochar"
         android:layout_width="0dp"
-        android:layout_height="109dp"
+        android:layout_height="160dp"
         android:layout_marginTop="621dp"
+        android:background="#FFFFFF"
+        android:fadingEdge="none"
+        android:foreground="@drawable/sprout"
+        android:requiresFadingEdge="none"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/chartohome"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -32,6 +41,9 @@
         android:layout_width="119dp"
         android:layout_height="109dp"
         android:layout_marginTop="621dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/housemaybe"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/chartocomm"
         app:layout_constraintTop_toTopOf="parent"
@@ -42,9 +54,37 @@
         android:layout_width="119dp"
         android:layout_height="109dp"
         android:layout_marginTop="621dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/commmembs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ford"
+        android:layout_width="50dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:name="com.example.vmwarehack_2.character0"
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/chartochar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout="@layout/fragment_character0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
